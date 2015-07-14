@@ -1,0 +1,62 @@
+{
+  "name": "rest-api",
+  "version": "1.0.3",
+  "description": "REST-API based on Koa framework and ES6 generators",
+  "author": "OPENMEDiAID",
+  "devDependencies": {
+    "arangojs": "^3.8.4",
+    "babel": "^5.6.14",
+    "chai": "^2.2.0",
+    "coffee-script": "^1.9.3",
+    "es6-module-loader": "^0.16.1",
+    "gulp": "gulpjs/gulp#4.0",
+    "gulp-apidoc": "^0.1.4",
+    "gulp-apidoc-swagger": "^0.2.0",
+    "gulp-babel": "^5.1.0",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-task-list": "0.0.1",
+    "gulp-task-listing": "^1.0.1",
+    "isparta": "^2.2.0",
+    "jspm": "^0.15.0",
+    "karma": "~0.12.24",
+    "karma-babel-preprocessor": "^5.2.1",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-coverage": "douglasduteil/karma-coverage#next",
+    "karma-jspm": "^1.1.4",
+    "karma-mocha": ">=0.1.9",
+    "karma-phantomjs-launcher": "~0.1.4",
+    "karma-systemjs": "^0.2.1",
+    "koa": "^0.21.0",
+    "koa-router": "^5.1.2",
+    "object.assign": "^3.0.1",
+    "phantomjs-polyfill": "0.0.1",
+    "systemjs": "^0.16.4",
+    "uuid": "^2.0.1"
+  },
+  "dependencies": {},
+  "jspm": {
+    "directories": {
+      "lib": "src"
+    },
+    "configFile": "jspm.config.js",
+    "dependencies": {
+      "immutable": "npm:immutable@^3.7.1",
+      "uuid": "npm:uuid@^2.0.1"
+    },
+    "devDependencies": {
+      "babel": "npm:babel@^4.7.16",
+      "babel-runtime": "npm:babel-runtime@^4.7.16",
+      "core-js": "npm:core-js@^0.9.4"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/open-medicine-initiative/gtrie.git"
+  },
+  "scripts": {
+    "postinstall": "jspm install",
+    "test": "karma start --single-run",
+    "coverage": "karma start karma.cov.conf.js --single-run"
+  }
+}

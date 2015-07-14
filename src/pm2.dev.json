@@ -1,0 +1,15 @@
+{
+  "apps": [{
+    "script": "./server.js",
+    "name"      : "web-api",
+    "exec_mode" : "cluster_mode",
+    "instances" : -2,
+    "error_file" : "/var/log/webapi.stderr.log",
+    "out_file" :"/var/log/webapi.stdout.log",
+    "watch" : false,
+    "max_restarts" : 5,
+    "max_memory_restart" : "250M",
+    "next_gen_js" : true
+  }]
+}
+
