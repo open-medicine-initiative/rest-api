@@ -1,3 +1,8 @@
+#Requirements
+
+* iojs >= 2.3.4 (tip: use latest nvm to manage environments)
+* phantomjs
+
 #Installation
 
 `sudo npm install -g gulpjs/gulp-cli#4.0 babel coffee-script pm2`

@@ -1,3 +1,4 @@
+
 //http://raganwald.com/2015/06/26/decorators-in-es7.html
 //https://medium.com/google-developers/exploring-es7-decorators-76ecb65fb841
 //https://github.com/mako-taco/DecorateThis
@@ -21,4 +22,11 @@ export function mixin (behaviour, sharedBehaviour = {}) {
         value: (i) => !!i[typeTag]
     });
     return _mixin;
+}
+
+//http://elmasse.github.io/js/decorators-bindings-es7.html
+export function Mixins(...list) {
+    return function (target) {
+        Object.assign(target.prototype, ...list)
+    }
 }

@@ -3,17 +3,17 @@ module.exports = function(config) {
     return browser.toLowerCase().split(/[ /-]/)[0];
   }
 
-  var babelOptions = require('./.babelrc');
+  var babelOptions = require('./babel.config');
 
   config.set({
     frameworks: ['mocha', 'chai', 'jspm'],
-    files: ['node_modules/babel/browser-polyfill.js'],
+    files: ['node_modules/babel/node_modules/babel-core/browser-polyfill.js'],
     preprocessors: {
       'src/**/*.spec.js': ['babel'],
       'src/**/!(*.spec).js': ['coverage']
     },
     reporters: ['progress', 'coverage'],
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS'],
 
     ////
 

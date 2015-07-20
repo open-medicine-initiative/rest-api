@@ -1,16 +1,18 @@
 
-import {mixin} from '../util/mixin'
-export const Invocable = mixin({
+export class Invocable {
 
-    _before: [],
-    _after: [],
+    constructor(){
+        this._before = [];
+        this._after= [];
+    }
+
     before(func){
         this._before.push(func);
         return this;
-    },
+    }
 
     after(func){
         this._after.push(func);
         return this;
     }
-});
+}

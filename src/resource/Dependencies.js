@@ -1,14 +1,16 @@
 
-import {mixin} from '../util/mixin'
-export const Dependencies = mixin({
+export class Metadata {
 
-    _bdeps: [],
-    depends({id,target}){
-        this._before.push(func);
+    constructor(){
+        this._meta = {}
+
+    }
+    metadata({key,value}){
+        this._meta[key] = value;
         return this;
-    },
+    }
 
-});
+};
 
 export function context(attr){
     return (ctx, value) => ctx[attr] = value;
