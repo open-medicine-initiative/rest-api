@@ -17,7 +17,6 @@ System.config({
 
 System.config({
   "map": {
-    //"DomainObject": "./src/struct/gtrie",
     "babel": "npm:babel@4.7.16",
     "babel-runtime": "npm:babel-runtime@4.7.16",
     "core-js": "npm:core-js@0.9.18",
