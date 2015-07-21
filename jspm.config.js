@@ -17,8 +17,8 @@ System.config({
 
 System.config({
   "map": {
-    "babel": "npm:babel@4.7.16",
-    "babel-runtime": "npm:babel-runtime@4.7.16",
+    "babel": "npm:babel-core@5.7.4",
+    "babel-runtime": "npm:babel-runtime@5.7.0",
     "core-js": "npm:core-js@0.9.18",
     "immutable": "npm:immutable@3.7.1",
     "uuid": "npm:uuid@2.0.1",
@@ -67,6 +67,9 @@ System.config({
       "util": "npm:util@0.10.3"
     },
     "npm:babel-runtime@4.7.16": {
+      "process": "github:jspm/nodelibs-process@0.1.1"
+    },
+    "npm:babel-runtime@5.7.0": {
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:browserify-aes@1.0.1": {

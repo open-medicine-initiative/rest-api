@@ -1,6 +1,6 @@
 #Requirements
 
-* iojs >= 2.3.4 (tip: use latest nvm to manage environments)
+* iojs >= 1.8.1 (tip: use latest nvm to manage environments)
 * phantomjs
 
 #Installation
@@ -10,7 +10,8 @@
 
 #Run
 
-`pm2 start server.js -i 0 --next-gen-js`
+Single server: 'node startup.js'
+Clustered : `pm2 start server.js -i 0 --next-gen-js`
 
 
 

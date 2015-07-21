@@ -11,7 +11,8 @@ genapidoc = ->
 		includeFilters: [ ".*\\.js$" ]
 genapidoc.description = "Generate API documentation for REST resources"
 
-
+# Generation of ESDoc
+# Note: Currently ESDoc does not support ES7 features which are used by the project
 genesdoc = ->
 	run('esdoc -c ./esdoc.json').exec()
 genesdoc.description = 'Generate esdoc-based documentation'

@@ -5,6 +5,10 @@ import Database from 'arangojs';
 export class SymptomController{
 
   constructor(router){
+
+  }
+
+  initialize(router){
     let arangodb = new Database({
       url: 'http://localhost:8529',
       agentOptions: {maxSockets: 5},
